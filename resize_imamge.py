@@ -2,7 +2,6 @@ from PIL import Image
 
 # 先找1张图片
 # 目的  调整图片大小。做 Chrome 插件的时候，需要用到图标。
-
 def resize_image(input_name, out_name, out_width, out_height):
     img = Image.open(input_name)
     out = img.resize((out_width, out_height))

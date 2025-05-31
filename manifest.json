@@ -28,11 +28,15 @@
   },
 
   "content_scripts": [
+
     {
-      "matches": ["*://*/*"],
+      "matches": ["https://grok.com/*"],
       "css": ["main.css"],
-      "js": ["content.js"],
+      "js": ["grok2md.js"],
       "run_at": "document_end"
     }
+
   ]
+
+   
 }
